@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configuration>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+
+    <Appenders>
+        <!-- FILE APPENDER -->
+        <!-- <File name="FILE"
+         fileName="\ApplicationALL.log"
+         append="false">
+         <PatternLayout
+          pattern=" %-5p | %d{yyyy-MM-dd HH:mm:ss} | [%C{2} (%F:%L)] - %m%n" />
+
+        </File> -->
+
+        <!-- CONSOLE APPENDER -->
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="[%-5p]|%d{dd.MM.yyyy HH:mm:ss}|: %msg%n%throwable "/>
+            <!-- [%C{2} (%F:%L)] [%logger{2}] -->
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="all">
+            <AppenderRef ref="STDOUT"/>
+            <!-- <AppenderRef ref="FILE" />-->
+        </Root>
+    </Loggers>
+
+</Configuration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context>
+    <Resource name="jdbc/mydb" auth="Container" type="javax.sql.DataSource"
+              username="root"
+              password="Slavon995511"
+              maxActive="10000"
+              maxIdle="3000"
+              maxWait="100000"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost/epam_task12"
+              validationQuery="SELECT 1"/>
+</Context>
